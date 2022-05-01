@@ -1,0 +1,43 @@
+{
+  "name": "ci",
+  "description": "Node CI with github actions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": " mocha --require ts-node/register e2e/*.ts",
+    "build": "tsc",
+    "start": "ts-node ./src/index.ts",
+    "start:dev": "ts-node-dev ./src/index.ts",
+    "lint": "eslint src/*.ts src/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nlapshin/node-ci.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nlapshin/node-ci/issues"
+  },
+  "homepage": "https://github.com/nlapshin/node-ci#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/express": "^4.17.13",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^17.0.30",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "chai": "^4.3.6",
+    "eslint": "^8.14.0",
+    "mocha": "^10.0.0",
+    "supertest": "^6.2.3",
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.4"
+  }
+}
