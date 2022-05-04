@@ -7,8 +7,6 @@ import router from './routes'
 const app = express();
 app.use(router);
 
-console.log('Hello')
-
 const server = app.listen(config.port, () => {
   console.log(`server running on port 4000`);
 });
